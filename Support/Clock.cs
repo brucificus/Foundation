@@ -4,9 +4,9 @@ namespace Support
 {
     public class Clock : IClock
     {
-        public DateTime Now()
+        public DateTimeOffset Now()
         {
-            return DateTime.Now;
+            return DateTimeOffset.UtcNow;
         }
     }
 }

@@ -4,6 +4,6 @@ namespace Support
 {
     public interface IClock
     {
-        DateTime Now();
+        DateTimeOffset Now();
     }
 }
