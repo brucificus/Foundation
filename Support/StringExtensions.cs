@@ -9,9 +9,9 @@ namespace Support
         public static IEnumerable<string> SplitAndTrimOnAllNewlines(this string input)
         {
             return input.Split(
-                new[] {"\r\n", "\r", "\n"},
-                StringSplitOptions.RemoveEmptyEntries
-            ).Select(c => c.Trim());
+                new[] { "\r\n", "\r", "\n" },
+                StringSplitOptions.RemoveEmptyEntries)
+            .Select(c => c.Trim());
         }
     }
 }
