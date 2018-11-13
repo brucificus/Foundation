@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 
-namespace Support
+namespace FGS.Incipience.Support
 {
     public static class StringExtensions
     {
