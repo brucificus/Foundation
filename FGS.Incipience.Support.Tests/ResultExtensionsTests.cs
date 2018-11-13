@@ -1,11 +1,9 @@
 ﻿using System;
 using System.Collections.Generic;
-
+using FGS.Incipience.TestSupport;
 using Moq;
 
 using NUnit.Framework;
-
-using TestSupport;
 
 namespace FGS.Incipience.Support.Tests
 {

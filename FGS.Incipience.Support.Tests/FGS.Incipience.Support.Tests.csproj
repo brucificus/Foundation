@@ -23,7 +23,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\FGS.Incipience.Support\FGS.Incipience.Support.csproj" />
-    <ProjectReference Include="..\TestSupport\TestSupport.csproj" />
+    <ProjectReference Include="..\TestSupport\FGS.Incipience.TestSupport.csproj" />
   </ItemGroup>
 
 </Project>
