@@ -2,6 +2,7 @@
 
 namespace Support
 {
+#pragma warning disable SA1402 // File may only contain a single class
     public interface IResult<out TError>
     {
         TResult Match<TResult>(Func<TResult> success, Func<TError, TResult> error);
@@ -69,4 +70,5 @@ namespace Support
 
         public static IResult<TSuccess, TError> Error<TSuccess, TError>(TError error) => new Error<TSuccess, TError>(error);
     }
+#pragma warning restore SA1402 // File may only contain a single class
 }

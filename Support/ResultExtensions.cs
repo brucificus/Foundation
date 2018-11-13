@@ -12,7 +12,7 @@ namespace Support
         {
             return result.Match(
                 success: successes =>
-                {   
+                {
                     return lazySecondResult.Value.Match(
                         success: innerData =>
                         {
@@ -41,7 +41,6 @@ namespace Support
 
             var intermediateResult = CombineOnSuccessWith(result, operands.First(), conversionFunc);
             return intermediateResult.CombineOnSuccessWithMany(operands.Skip(1), conversionFunc);
-
         }
 
         public static IResult<IEnumerable<TSuccessData>, TError> ContinueOnSuccessWithMany<TStartType, TSuccessData, TError>(

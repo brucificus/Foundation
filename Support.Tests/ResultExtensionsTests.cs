@@ -33,7 +33,7 @@ namespace Support.Tests
         public void CombineOnSuccessWith_TwoSuccess_CombineSuccessfully()
         {
             var result = _startingSuccessResult.CombineOnSuccessWith("", _ => _successResult);
-            
+
             result.AssertSuccess(new[] { FirstSuccess, SecondSuccess });
         }
 
@@ -41,7 +41,7 @@ namespace Support.Tests
         public void CombineOnSuccessWith_SuccessAndError_ReturnsError()
         {
             var result = _startingSuccessResult.CombineOnSuccessWith("", _ => _errorResult);
-            
+
             result.AssertError(SecondError);
         }
 
@@ -49,7 +49,7 @@ namespace Support.Tests
         public void CombineOnSuccessWith_ErrorAndSuccess_ReturnsError_AndDoesNotEvaluateSecondResult()
         {
             var result = _startingErrorResult.CombineOnSuccessWith("", _mockEvaluateIResultFunc.Object);
-            
+
             result.AssertError(FirstError);
             _mockEvaluateIResultFunc.VerifyNoOtherCalls();
         }
@@ -70,7 +70,7 @@ namespace Support.Tests
             var fourthSuccess = "Fourth Success.";
             var thirdSuccessResult = Result.Success<string, string>(thirdSuccess);
             var fourthSuccessResult = Result.Success<string, string>(fourthSuccess);
-            
+
             var operands = new[] { "", "", "" };
             _mockEvaluateIResultFunc.SetupSequence(m => m(It.IsAny<string>()))
                 .Returns(_successResult)
