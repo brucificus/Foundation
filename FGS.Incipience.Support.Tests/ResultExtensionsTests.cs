@@ -1,6 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
+
 using FGS.Incipience.TestSupport;
+
 using Moq;
 
 using NUnit.Framework;

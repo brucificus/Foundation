@@ -1,4 +1,5 @@
 ﻿using FGS.Incipience.Support;
+
 using NUnit.Framework;
 
 namespace FGS.Incipience.TestSupport
