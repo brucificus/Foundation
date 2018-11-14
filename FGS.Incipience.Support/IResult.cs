@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace Support
+namespace FGS.Incipience.Support
 {
 #pragma warning disable SA1402 // File may only contain a single class
     public interface IResult<out TError>

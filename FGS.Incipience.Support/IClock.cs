@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace Support
+namespace FGS.Incipience.Support
 {
     public interface IClock
     {

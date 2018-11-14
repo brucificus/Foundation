@@ -1,13 +1,13 @@
 ﻿using System;
 using System.Collections.Generic;
 
+using FGS.Incipience.TestSupport;
+
 using Moq;
 
 using NUnit.Framework;
 
-using TestSupport;
-
-namespace Support.Tests
+namespace FGS.Incipience.Support.Tests
 {
     public class ResultExtensionsTests
     {

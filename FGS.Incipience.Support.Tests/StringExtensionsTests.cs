@@ -1,7 +1,8 @@
 ﻿using System.Linq;
+
 using NUnit.Framework;
 
-namespace Support.Tests
+namespace FGS.Incipience.Support.Tests
 {
     public class StringExtensionsTests
     {
