@@ -26,7 +26,7 @@ namespace FGS.Incipience.TestSupport
         public static void AssertError<TSuccess, TError>(this IResult<TSuccess, TError> result, TError expectedErrorData)
         {
             result.Match(
-                success: data => Assert.Fail("Expected expectedErrorData result, but was success"),
+                success: data => Assert.Fail("Expected error result, but was success"),
                 error: data => Assert.That(data, Is.EqualTo(expectedErrorData)));
         }
 
@@ -36,7 +36,7 @@ namespace FGS.Incipience.TestSupport
         {
             result.Match(
                 success: data => Assert.That(data, Is.EqualTo(expectedSuccessData)),
-                error: data => Assert.Fail("Expected success result, but was expectedErrorData"));
+                error: data => Assert.Fail("Expected success result, but was error"));
         }
     }
 }
