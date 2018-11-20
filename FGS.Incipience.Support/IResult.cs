@@ -5,6 +5,8 @@ namespace FGS.Incipience.Support
 #pragma warning disable SA1402 // File may only contain a single class
     public interface IResult<out TError>
     {
+        void Match(Action success, Action<TError> error);
+
         TResult Match<TResult>(Func<TResult> success, Func<TError, TResult> error);
     }
 
@@ -17,6 +19,8 @@ namespace FGS.Incipience.Support
 
     public sealed class Success<TError> : IResult<TError>
     {
+        public void Match(Action success, Action<TError> error) => success();
+
         public TResult Match<TResult>(Func<TResult> success, Func<TError, TResult> error) => success();
     }
 
@@ -42,6 +46,8 @@ namespace FGS.Incipience.Support
         {
             _error = error;
         }
+
+        public void Match(Action success, Action<TError> error) => error(_error);
 
         public TResult Match<TResult>(Func<TResult> success, Func<TError, TResult> error) => error(_error);
     }

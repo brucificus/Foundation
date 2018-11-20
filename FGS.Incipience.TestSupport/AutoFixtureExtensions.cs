@@ -13,5 +13,13 @@ namespace FGS.Incipience.TestSupport
             fixture.Register(() => mock.Object);
             return mock;
         }
+
+        public static Mock<T> MockStrict<T>(this Fixture fixture)
+            where T : class
+        {
+            var mock = new Mock<T>(MockBehavior.Strict);
+            fixture.Register(() => mock.Object);
+            return mock;
+        }
     }
 }
