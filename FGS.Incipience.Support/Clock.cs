@@ -1,5 +1,7 @@
 ﻿using System;
 
+using FGS.Incipience.Support.Abstractions;
+
 namespace FGS.Incipience.Support
 {
     internal class Clock : IClock

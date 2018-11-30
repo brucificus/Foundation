@@ -10,6 +10,6 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\FGS.Incipience.Support\FGS.Incipience.Support.csproj" />
+    <ProjectReference Include="..\FGS.Incipience.Support.Abstractions\FGS.Incipience.Support.Abstractions.csproj" />
   </ItemGroup>
 </Project>
