@@ -1,4 +1,4 @@
-﻿using FGS.Incipience.Support;
+﻿using FGS.Incipience.Support.Abstractions;
 
 using NUnit.Framework;
 

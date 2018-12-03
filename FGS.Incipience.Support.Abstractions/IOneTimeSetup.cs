@@ -1,4 +1,4 @@
-﻿namespace FGS.Incipience.Support
+﻿namespace FGS.Incipience.Support.Abstractions
 {
     public interface IOneTimeSetup
     {

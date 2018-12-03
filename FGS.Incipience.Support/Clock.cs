@@ -1,8 +1,10 @@
 ﻿using System;
 
+using FGS.Incipience.Support.Abstractions;
+
 namespace FGS.Incipience.Support
 {
-    public class Clock : IClock
+    internal class Clock : IClock
     {
         public DateTimeOffset Now()
         {

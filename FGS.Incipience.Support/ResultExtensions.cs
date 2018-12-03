@@ -2,6 +2,8 @@
 using System.Collections.Generic;
 using System.Linq;
 
+using FGS.Incipience.Support.Abstractions;
+
 namespace FGS.Incipience.Support
 {
     public static class ResultExtensions
