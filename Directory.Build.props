@@ -7,5 +7,6 @@
 
   <ItemGroup>
     <PackageReference Include="StyleCop.Analyzers" Version="1.0.2" />
+    <PackageReference Include="OneOf" Version="2.1.127" />
   </ItemGroup>
 </Project>
