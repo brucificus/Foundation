@@ -10,8 +10,16 @@ namespace FGS.Incipience.TestSupport
             this OneOf<Success, TError> result)
         {
             result.Switch(
-                _ => Assert.Pass(),
+                _ => { },
                 _ => Assert.Fail("Expected success result, but was error"));
+        }
+
+        public static void AssertError<TSuccess, TError>(
+            this OneOf<TSuccess, TError> result)
+        {
+            result.Switch(
+                _ => Assert.Fail("Expected error result, but was success"),
+                _ => { });
         }
 
         public static void AssertError<TError>(
