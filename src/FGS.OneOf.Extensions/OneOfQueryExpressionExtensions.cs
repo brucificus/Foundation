@@ -5,7 +5,7 @@ using System.Linq;
 
 using OneOf;
 
-namespace FGS.Incipience.Support
+namespace FGS.OneOf.Extensions
 {
     public static class OneOfQueryExpressionExtensions
     {

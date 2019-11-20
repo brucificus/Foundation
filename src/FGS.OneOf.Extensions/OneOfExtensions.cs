@@ -3,7 +3,7 @@
 using OneOf;
 using OneOf.Types;
 
-namespace FGS.Incipience.Support
+namespace FGS.OneOf.Extensions
 {
     public static class OneOfExtensions
     {

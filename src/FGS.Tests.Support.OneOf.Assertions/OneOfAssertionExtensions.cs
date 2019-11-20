@@ -2,7 +2,7 @@
 using OneOf;
 using OneOf.Types;
 
-namespace FGS.Incipience.TestSupport
+namespace FGS.Tests.Support.OneOf.Assertions
 {
     public static class OneOfAssertionExtensions
     {
